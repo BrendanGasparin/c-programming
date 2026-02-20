@@ -12,4 +12,4 @@ Programmers are the people who write and maintain the code that keeps modern soc
 
 An electronic computer is just an inert chunk of hardware without programming. It can add one plus one, but only if a programmer tells it to do so.  
 
-Programming is not just about building apps and launching rockets and being a cyberpunk hero. It is also about learning to think clearly and logically, solve problems systematically, and express creativity through code.  
+Programming is not just about building apps and launching rockets. It is also about learning to think clearly and logically, solve problems systematically, and express creativity through code.  
