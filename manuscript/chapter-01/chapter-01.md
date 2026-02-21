@@ -32,7 +32,7 @@ In order to be useful in the real world, a computer (and a computer program) mus
 
 This essentially makes a computer program a black box with input going in one end and output coming out of the other.  
 
-![Program diagram with input in and out.](../../assets/diagrams/chatper-01/itp-diagram-ch01-001.png)  
+![Program diagram with input in and out.](../../assets/diagrams/chapter-01/itp-diagram-ch01-001.png)  
 
 Obfuscated inside the box is whatever algorithm, problem-solving processes, and computations the programmer implemented when they wrote the program. These are applied to the input to give an output. For example, and electronic cash register might be programmed to sum the scanned items being purchased by a customer. A computer game takes input from the controller, applies it to the player's character in the game, and then outputs the result on the screen and speakers.  
 
