@@ -32,9 +32,10 @@ In order to be useful in the real world, a computer (and a computer program) mus
 
 This essentially makes a computer program a black box with input going in one end and output coming out of the other.  
 
-![Program diagram with input in and out.](../../assets/diagrams/chapter-01/itp-diagram-ch01-001.png)  
+![Program diagram with input and output.](../../assets/diagrams/chapter-01/itp-diagram-ch01-001.png)  
+*Figure 1: Program with input and output.*
 
-Obfuscated inside the box is whatever algorithm, problem-solving processes, and computations the programmer implemented when they wrote the program. These are applied to the input to give an output. For example, and electronic cash register might be programmed to sum the scanned items being purchased by a customer. A computer game takes input from the controller, applies it to the player's character in the game, and then outputs the result on the screen and speakers.  
+Obfuscated inside the box is whatever algorithms, problem-solving processes, and computations the programmer implemented when they wrote the program. These are applied to the input to give an output. For example, and electronic cash register might be programmed to sum the scanned items being purchased by a customer. A computer game takes input from the controller, applies it to the player's character in the game, and then outputs the result on the screen and speakers.  
 
 A program is correct if it produces the expected and correct output for all inputs.  
 
@@ -42,13 +43,28 @@ A program is correct if it produces the expected and correct output for all inpu
 
 Programming is not just about building apps and launching rockets. It is also about learning to think clearly and logically, to solve problems systematically and efficiently, and to express function and creativity through code.  
 
+### 1. Programming Teaches You to Think Clearly
+
 Programming teaches you to:  
 
-- Think systematically and effectively  
+- Think systematically, logically, and effectively
+- Think in an organised and structured manner  
 - Break complex problems into smaller parts  
 - Design step-by-step solutions  
 - Value efficiency and economy  
 - Diagnose and debug issues  
+
+### 2. Programming Gives You The Power to Build
+
+### 3. Programming Opens Career Opportunities
+
+### 4. Programming Enables Automation
+
+### 5. Programming Helps You Understand the Modern World
+
+### 6. Programming Builds Resilience
+
+### 7. Programming is Foundational to Emerging Technologies
 
 ## The C Language: The Best First Language to Learn  
 
@@ -56,9 +72,18 @@ Ultimately, once you have learned the fundamentals of programming in the C langu
 
 ## What This Book Will Teach You  
 
+We will learn:
+
+- Synatactic knowledge
+- Conceptual knowledge
+- Strategic knowledge: Strategies for solving problems using programming
+- Documentation: How to properly document programs and your programming time
+
 ## Hello, World: The First C Program  
 
 The first program a programmer writes is traditionally a "hello, world" program. This is one of the simplest programs that can be written in C. It simply prints the words "hello, world" to the screen.  
+
+Here is the source code.
 
 ```C
 #include <stdio.h>
@@ -66,5 +91,7 @@ The first program a programmer writes is traditionally a "hello, world" program.
 int main(void)
 {
     printf("hello, world\n");
+
+    return 0;
 }
 ```
