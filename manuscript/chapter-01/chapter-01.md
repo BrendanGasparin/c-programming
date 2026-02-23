@@ -25,113 +25,128 @@ In order to be useful in the real world, a computer (and most computer programs)
 This essentially makes a computer program a black box with input going in one end and output coming out the other.  
 
 ![Program diagram with input and output.](../../assets/diagrams/chapter-01/itp-diagram-ch01-001.png)  
-*Figure 1: Program with input and output.*
+*Figure 1: Program with input and output.*  
 
 Obfuscated inside the box is whatever algorithms, problem-solving processes, and computations the programmer implemented when they wrote the program. These are applied to the input to give an output.  
 
-For example, an electronic cash register might be programmed to sum the scanned items being purchased by a customer. A computer game takes input from the controller, applies that input to the player's character in the game, and then outputs the result on the screen and speakers.  
+For example, an electronic cash register might be programmed to sum the scanned items being purchased by a customer. If the program is correctly implemented then the user does not need to know the specifics of what is in the program's "black box".  
+
+A computer game takes input from a player using controls, applies that input to the player's character in the game, and then outputs the result on the screen and speakers.  
 
 A program is correct if it produces the expected and correct output for all inputs. Verifying this can often take extensive testing.  
 
-Programming is a technical process, but also a creative one, like sculpting, painting, or music. Unlike formal science where we begin with a hypothesis and test or refine it until it can be proven, in computer science we begin with a goal or end in mind and then write code until we reach that goal or end.  
+Programming is a technical process, but can also be a creative one, like sculpting, painting, or making music.  
 
-Programs are written in programming languages. This is also referred to as code (and programming as coding).  
+In formal science we test our hypotheses until they can be confirmed, refined, or discarded. But in computer science we begin with a problem, usually rooted in the real world, and design a technological solution for that problem.  
+
+Computer programs do everything from simple mathematics to managing entire governments, corporations, militaries, and economies.  
+
+Programs manage social infrastructure, city utility grids, launch rockets, and keep satellites in space. They let you doomscroll social media on your phone, surf the web on your laptop, and watch streaming services on your smart TV.  
+
+Programmers are the people who write and maintain all of the code required to keep the various moving parts of modern digital society interlocked and functioning.  
+
+Computer programs are written in computer programming languages. These is also referred to as code (and programming as coding).  
 
 ## What is a Programming Language?  
 
-A programming language specifies words and symbols that can be used for writing a program. It also defines rules for combining these words and symbols to form valid program statements. In this way, a computer language is much like a human language. Human languages also specify words, punctuation, and rules that can be used to form understandable sentences.  
+A programming language specifies words and symbols that can be used for writing programs. It also defines rules for combining these words and symbols to form valid program statements.  
 
-## Source Code, Compilers, and Software Applicatons
+In this way, a computer language is much like a human language. Human languages also specify words, punctuation, and rules that can be used to form understandable sentences.  
 
-Of course, computers do not understand human languages like English. They do not really understand programming languages like C either. Computers are ultimately electronics that only understand pulses of electricity. These can be expressed with binary values: on or off, electricity or no electricity, one or zero, true or false.  
+A program can be thought of like a written language. Take the example of a letter (or email).  
 
-You may have heard that computers only understand the mathematics of binary, a number system comprised entirely of zeroes and ones. This is true. Human-readable programming languages were written as an intermediary so that humans could read and write sensible commands for computers.  
+![A letter divided into sections.](../../assets/diagrams/chapter-01/itp-diagram-ch01-002-email.png)  
+*Figure 2. An example of a letter or email.*  
 
-Programmers tend to write in human-readable languages like C. This is called source code. It is usually stored in plain text files. Source code can be fed through programs called compilers and interpreters that convert the code into binary instructions for computers to execute.  
+A letter consists of sections, like the the salutation, the body, and the signature. Each section is comprised of lines or paragraphs, which in turn consist of words and punctuation.  
 
-C source code contains one or more functions. A function contains one or more statements. In C, execution begins with a function called main(). If there is no main() function, the program will (?)  
+Similarly, a program might be divided into functions, which are each comprised of one or more program statements, which are in turn each composed of words and symbols.  
 
-This source code is then sent through a program called a C compiler than converts it into machine-readable binary instructions. The result is an executable file (also called a binary) that can br ran as a software application.  
+![A program divided into section.](../../assets/diagrams/chapter-01/itp=diagram-ch01-003-program.png)  
+*Figure 3. A program with functions, statements, words, and symbols*  
 
-To write a program in C we only have to understand the words and symbols used to write in the language, and the rules used to combine those into meaningful programming statements.
+This is an example of a simple C program. It has a single function which contains a single program statement. There is also an include statement, the function header, symbols like punctuation, and white space.  
 
-## Why Learn Programming?  
+Functions are named blocks of code. They consist of one or more programming statements. These programming statements determine what the function will do.  
 
-Programming is not just about building apps and launching rockets. It is also about learning to think clearly and logically, to solve problems systematically and efficiently, and to express function and creativity through code.  
+Programming statements consist of words, symbols, and white space. Words and symbols in C represent things known as tokens. Tokens can be divided into:  
 
-There are plenty of reasons to learn programming. Here are seven.  
+- Keywords  
+- Identifiers  
+- Constants  
+- Operators  
+- Punctuation  
 
-### 1. Programming Teaches You to Think Clearly
+Keywords are words that already have a defined meaning and a specific use or uses in the C language. They are reserved words, which means they cannot be used as identifiers.  
 
-Programming teaches you to:  
+Identifiers are names given to things by programmers. Programmers might give names to functions, constants, variables, and more complex data structures like arrays.  
 
-- Think systematically, logically, and effectively
-- Think in an organised and structured manner  
-- Break complex problems into smaller parts  
-- Design step-by-step solutions  
-- Value efficiency, economy, and correctness  
-- Diagnose and debug issues  
+Constants are literal values, like the number 42, the character 'B', or the string "hello".  
 
-These skills can transfer into other areas, like business, school, or personal life.
+Operators are mathematical, logical, (comparison?,) and assignment operators like + or -. They are used to store, retrieve, compare, and compute values.  
 
-### 2. Programming Gives You The Power to Build  
+Punctuation is also used in C code. For example, a semi-colon indicates the end of a program statement. A set of curly parentheses indicate a singular block of code.  
 
-Programming is ultimately a creative discipline, like sculpting, painting, or making music. Unlike in scientific fields, where we create a hypothesis and then test and refine it until it matches the real world, programmers begin with an end in mind and write code until they have achieved their goal.  
+Code can contain comments. These statements have no function and are not executed by the computer. They are used to leave messages and reminders to yourself or other programmers who look at your code.  
 
-If it is within the bounds of what computing accomplish, then you can create a program to accomplish it.
+Code can also contain whitespace (spaces, tabs, and newlines). Different programming languages treat whitespace in different ways. C ignores it, but it can be used to drastically enhance readability for human users, and many institutions and organisations have specific style guides on how to write and space C code.  
 
-### 3. Programming Opens Career Opportunities  
+As well as the words and symbols that comprise a language, programming languages have **syntax** and **semantic** rules, once again like human language.  
 
+The syntax or syntactical rules of a programming language define how words and symbols are combined to make valid program statements.  
 
+The semantic meaning of a program statement is what a statement means in a given language, i.e. what it will do if executed.  
 
-### 4. Programming Enables Automation  
+A syntax error is an error in the syntactical rules of a programming language.  
 
-A lot of the power of programming is that it enables the automation of tasks that once had to be performed with human labour.  
+For example:  
 
-### 5. Programming Helps You Understand the Modern World  
+```c
+#include <stdio.h>
 
-When people think of software they might think of their smartphone apps, or their laptop computer programs, or maybe even a workplace productivity tool. But information technology is deeply ingrained into the fabric of our world.  
+int main{void}
+(
+    printf("This program has started.\n");
+    printf("This program has finished.\n");
+)
+```
 
-Almost every aspect of human endeavour nowadays is catalogued and managed nowadays as vast databases of information. These are created and managed by programs written by programmers!  
+This is a syntax error because we are using curly braces around the void keyword and parentheses around the code block when it should be the other way around. We are not following the syntactical rules of the programming language.  
 
-Data drives every day life: your social security number, your identity, your bank account, your taxes, are all tracked in massive computer sysystems. Governments, militaries, academic instutions, the medical industry, private enterprises, and more all collect and process massive amounts of data that must be stored and manipulated by computers programs. Computers (and computer programs) are used to further every science and industry, every frontier of human knowledge.  
+It is possible for a program to be syntactically correct but to have a semantic error. A semantic error is a logical error. The program will run but will not produce the intended output.  
 
-Programmers build systems that run empires, nations, and Fortune 500 companies. Their programs control city utility grids, global economic and logistical networks, and send rockets into space. Programmers write maintain the code that keeps modern society and its many complex moving parts interlocked and functioning.  
-
-### 6. Programming Builds Resilience  
-
-### 7. Programming is Foundational to Emerging Technologies  
-
-
-
-## Why Learn C As Your First Language    
-
-Ultimately, once you have learned the fundamentals of programming in the C language, you will be able to apply what you have learned to other computer languages and pick them up very quickly.
-
-## What This Book Will Teach You  
-
-This book will teach you to solve problems using computers and programming.
-
-We will learn:
-
-- Syntactic knowledge: The cynactics of the C programming language
-- Conceptual knowledge: What we can do with computers and C, conceptually
-- Strategic knowledge: Strategies for solving problems using programming  
-- Documentation: How to properly document programs, processes, and software products  
-
-## Hello, World: The First C Program  
-
-The first program a programmer writes is traditionally a "hello, world" program. This is one of the simplest programs that can be written in C. It simply prints the words "hello, world" to the screen.  
-
-Here is the source code.
-
-```C
+```c
 #include <stdio.h>
 
 int main(void)
 {
-    printf("hello, world\n");
-
-    return 0;
+    printf("This program has finished.\n");
+    printf("This program has started.\n");
 }
 ```
+
+It seems that the programmer got the program statements around the wrong way and now the program will claim to be finished before it even starts. This is a semantic error.  
+
+Different programming languages have different capabilities and requirements, but general knowledge of one language and how to use it makes it much easier to learn other languages, especially similar ones.  
+
+## Source Code, Compilers, and Software Applicatons  
+
+Computers do not understand human languages like English. They do not really understand programming languages like C either. Computers are ultimately electronics that only understand electricity. But electricity can be expressed as binary values: on or off, electricity or no electricity, one or zero, true or false.  
+
+You may have heard that computers only understand the mathematics of binary, a number system comprised entirely of zeroes and ones. This is true. Human-readable programming languages were written as an intermediary so that humans could read and write sensible commands for computers without having to write pure binary.  
+
+Programmers tend to write in human-readable languages like C. Programs in these languages are called source code. They are usually stored in plain text files.  
+
+Source code can be fed through programs called compilers and interpreters that convert the code into binary instructions for computers to execute.  
+
+Some programming languages are interpreted. The source code for these programs is read another program called an interpreter. The interpreter reads the source code and then executes the instructions on the fly. Examples of interpreted languages are JavaScript and Python.  
+
+Other languages, like C, are compiled.  
+
+A C programmer writes their code in the C language and saves it in a source code file. This source code is then sent through a program called a C compiler that converts the code, writing it into a new machine-readable executable file (also called a binary) that can be ran as a software application. When this application is executed, the program runs, in theory.  
+
+A compiler error is an error that prevents a program from compiling and producing a binary application. These are often syntax errors.  
+
+If the program compiles but fails while executing, this is called a runtime error. Sometimes this can cause abnormal termination of a program.  
+
+If the program runs but produces the wrong output, then a semantic error is often the cause.  
