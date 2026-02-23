@@ -55,7 +55,7 @@ In this way, a computer language is much like a human language. Human languages 
 
 A program can be thought of like a written language. Take the example of a letter (or email).  
 
-![A letter divided into sections.](../../assets/diagrams/chapter-01/itp-diagram-ch01-002-email.png)  
+![A letter divided into sections.](../../assets/diagrams/chapter-01/itp=diagram-ch01-002-message.png)  
 *Figure 2. An example of a letter or email.*  
 
 A letter consists of sections, like the the salutation, the body, and the signature. Each section is comprised of lines or paragraphs, which in turn consist of words and punctuation.  
