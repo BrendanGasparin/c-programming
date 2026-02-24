@@ -27,7 +27,7 @@ This essentially makes a computer program a black box with input going in one en
 ![Program diagram with input and output.](../../assets/diagrams/chapter-01/itp-diagram-ch01-001.png)  
 *Figure 1: Program with input and output.*  
 
-Obfuscated inside the box is whatever algorithms, problem-solving processes, and computations the programmer implemented when they wrote the program. These are applied to the input to give an output.  
+Obfuscated inside the box is whatever algorithms, problem-solving processes, and computer instructions the programmer implemented when they wrote the program. These are applied to the input to give an output.  
 
 For example, an electronic cash register might be programmed to sum the scanned items being purchased by a customer. If the program is correctly implemented then the user does not need to know the specifics of what is in the program's "black box".  
 
@@ -37,39 +37,45 @@ A program is correct if it produces the expected and correct output for all inpu
 
 Programming is a technical process, but can also be a creative one, like sculpting, painting, or making music.  
 
-In formal science we test our hypotheses until they can be confirmed, refined, or discarded. But in computer science we begin with a problem, usually rooted in the real world, and design a technological solution for that problem.  
+In formal science we test our hypotheses until they can be confirmed, refined, or discarded. But in computer science, and particularly programming, we begin with a problem, usually rooted in the real world, and design and build a technological solution for that problem. In this way, programming is more like the fine arts than the sciences.  
 
 Computer programs do everything from simple mathematics to managing entire governments, corporations, militaries, and economies.  
 
-Programs manage social infrastructure, city utility grids, launch rockets, and keep satellites in space. They let you doomscroll social media on your phone, surf the web on your laptop, and watch streaming services on your smart TV.  
+Programs manage social infrastructure, city utility grids, launch rockets, and keep satellites in space. They also let you doomscroll social media on your phone, surf the web on your laptop, and watch streaming services on your smart TV.  
 
 Programmers are the people who write and maintain all of the code required to keep the various moving parts of modern digital society interlocked and functioning.  
 
-Computer programs are written in computer programming languages. These is also referred to as code (and programming as coding).  
+Computer programs are written in computer programming languages. These are also referred to as code (and programming as coding).  
 
 ## What is a Programming Language?  
 
 A programming language specifies words and symbols that can be used for writing programs. It also defines rules for combining these words and symbols to form valid program statements.  
 
-In this way, a computer language is much like a human language. Human languages also specify words, punctuation, and rules that can be used to form understandable sentences.  
+A computer language is much like a human language. Human languages also specify words, punctuation, and rules that can be used to form understandable sentences.  
 
-A program can be thought of like a written language. Take the example of a letter (or email).  
+A program can be thought of like a written language. A written language (like English) is also composed of words and punctuation, and the rules that combine these words and punctuation into phrases, sentences, and paragraphs that can be meaninfully interpreted by a human reader.
+
+Take the example of a letter (or email).  
 
 ![A letter divided into sections.](../../assets/diagrams/chapter-01/itp=diagram-ch01-002-message.png)  
 *Figure 2. An example of a letter or email.*  
 
-A letter consists of sections, like the the salutation, the body, and the signature. Each section is comprised of lines or paragraphs, which in turn consist of words and punctuation.  
+A letter consists of sections, like the the salutation, the body, the complimentary close, and the signature. Each section is comprised of lines or paragraphs, which in turn consist of words and punctuation. There are various rules that can be used to create a grammatically correct and meaninful sentence. For instance, in English, a sentence ends in punctuation (a period, exclamation mark, or question mark). Commas are used to end the saltuation and separate the complimentary close from the signature. Names such as Mario and Princess Toadstool have their first letter captialised.  
 
-Similarly, a program might be divided into functions, which are each comprised of one or more program statements, which are in turn each composed of words and symbols.  
+Similarly, a program might be divided into sections: one or more functions, which are each comprised of one or more program statements, which are in turn each composed of words and symbols that follow rules to create code that translates into computer instructions.  
 
 ![A program divided into section.](../../assets/diagrams/chapter-01/itp=diagram-ch01-003-program.png)  
-*Figure 3. A program with functions, statements, words, and symbols*  
+*Figure 3. A program with a function, statements, words, and symbols*  
 
 This is an example of a simple C program. It has a single function which contains a single program statement. There is also an include statement, the function header, symbols like punctuation, and white space.  
 
 Functions are named blocks of code. They consist of one or more programming statements. These programming statements determine what the function will do.  
 
-Programming statements consist of words, symbols, and white space. Words and symbols in C represent things known as tokens. Tokens can be divided into:  
+Programming statements consist of words, symbols, and white space, just like an English sentence. The words and symbols have specific meanings or uses in the C language. For example, `printf` prints whatever follows it in the parentheses and double-quote marks.  
+
+This program simply prints the message `hello, world` to the computer's ouput (e.g. the monitor).
+
+Words and symbols in C represent things known as tokens. Tokens can be divided into:  
 
 - Keywords  
 - Identifiers  
@@ -91,13 +97,13 @@ Code can contain comments. These statements have no function and are not execute
 
 Code can also contain whitespace (spaces, tabs, and newlines). Different programming languages treat whitespace in different ways. C ignores it, but it can be used to drastically enhance readability for human users, and many institutions and organisations have specific style guides on how to write and space C code.  
 
-As well as the words and symbols that comprise a language, programming languages have **syntax** and **semantic** rules, once again like human language.  
+As well as the words and symbols that comprise a language, programming languages have **syntax** and **semantic** rules, just like human written language.  
 
-The syntax or syntactical rules of a programming language define how words and symbols are combined to make valid program statements.  
+The **syntax** or **syntactical rules** of a human language define how words and symbols are combined to communicate meaning. The syntactical rules of a program define how to make valid program statements. Syntactical rules inclusw the correct sequencing of words and symbols, and the grammatical rules used to put them together.  
 
-The semantic meaning of a program statement is what a statement means in a given language, i.e. what it will do if executed.  
+The **semantic** meaning of a statement is what a statement's meaning in a given language. In our example English letter, this is Princess Toadstool asking Mario to come to the castle for a cake. In a programming language, this equates to what a piece of code will do if executed.  
 
-A syntax error is an error in the syntactical rules of a programming language.  
+A syntax error is an error in the syntactical rules of a programming language. A program will only run in C if it follows the exact rules of the language.  
 
 For example:  
 
@@ -111,7 +117,7 @@ int main{void}
 )
 ```
 
-This is a syntax error because we are using curly braces around the void keyword and parentheses around the code block when it should be the other way around. We are not following the syntactical rules of the programming language.  
+This is a syntax error because we are using curly braces around the void keyword in the function header, and parentheses around the function's code block. It should be the other way around. We are not following the syntactical rules of the programming language so the program cannot be executed because the computer will not understand it as a valid C program.  
 
 It is possible for a program to be syntactically correct but to have a semantic error. A semantic error is a logical error. The program will run but will not produce the intended output.  
 
@@ -125,11 +131,11 @@ int main(void)
 }
 ```
 
-It seems that the programmer got the program statements around the wrong way and now the program will claim to be finished before it even starts. This is a semantic error.  
+It seems that the programmer got the program statements around the wrong way and now the program will claim to be finished before it even starts. This is a semantic error. The program is syntactically fine, but the final output will not be correct. It will not be what the programmer intended.  
 
 Different programming languages have different capabilities and requirements, but general knowledge of one language and how to use it makes it much easier to learn other languages, especially similar ones.  
 
-## Source Code, Compilers, and Software Applicatons  
+## Source Code, Compilers, Interpreters, and Software Applicatons  
 
 Computers do not understand human languages like English. They do not really understand programming languages like C either. Computers are ultimately electronics that only understand electricity. But electricity can be expressed as binary values: on or off, electricity or no electricity, one or zero, true or false.  
 
@@ -139,14 +145,16 @@ Programmers tend to write in human-readable languages like C. Programs in these 
 
 Source code can be fed through programs called compilers and interpreters that convert the code into binary instructions for computers to execute.  
 
-Some programming languages are interpreted. The source code for these programs is read another program called an interpreter. The interpreter reads the source code and then executes the instructions on the fly. Examples of interpreted languages are JavaScript and Python.  
+Some programming languages are interpreted. The source code for these programs is read by another program called an interpreter. The interpreter reads the source code and then executes the instructions on the fly. Examples of interpreted languages are JavaScript and Python.  
 
-Other languages, like C, are compiled.  
+Other languages, like C, are compiled. The source code for C is written and saved by a programmer in a source code file. It is then read by a program called a compiler, which creates a separate executable file where the C code is translated into binary instructions for a computer. This executable file can then be executed as a software application.
 
-A C programmer writes their code in the C language and saves it in a source code file. This source code is then sent through a program called a C compiler that converts the code, writing it into a new machine-readable executable file (also called a binary) that can be ran as a software application. When this application is executed, the program runs, in theory.  
+There are three types of errors that a programmer can make when writing C code:
 
-A compiler error is an error that prevents a program from compiling and producing a binary application. These are often syntax errors.  
+- **Compiler errors:** These are errors that prevents a program from compiling and producing a binary application. These are often syntax errors.  
 
-If the program compiles but fails while executing, this is called a runtime error. Sometimes this can cause abnormal termination of a program.  
+- **Runtime errors:** If the program compiles but fails while executing, this is called a runtime error. Sometimes this can cause abnormal termination of a program (e.g. the program crashes).  
 
-If the program runs but produces the wrong output, then a semantic error is often the cause.  
+- **Logical errors:** If the program runs but produces the wrong output, then a logical error is usually the cause. These are semantic errors.  
+
+A compiled program is often referred to as a software application. A software application is only part of a final software product, which can also consist of documentation, intangible components like data, and sometimes physical components like packaging or storage media.  
