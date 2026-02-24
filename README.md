@@ -1,6 +1,6 @@
-![Introduction to Programming (Using th C Language)](./assets/images/c-programming-repo-cover.jpg)
+![Introduction to Computer Programming (Using the C Language)](./assets/images/c-programming-repo-cover.jpg)
 
-# Introduction to Programming (Using the C Language)  
+# Introduction to Computer Programming (Using the C Language)  
 By [Brendan Gasparin](https://linktr.ee/brendangasparin)  
 
 ---
