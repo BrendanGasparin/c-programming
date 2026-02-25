@@ -1,4 +1,4 @@
-# 2. The Funadmentals of Computing: Hardware, Software, and Operating Systems  
+# 2. Computing Fundamentals: Hardware, Software, and Operating Systems  
 
 In order to truly understand programming in the C language we need to understand the fundamentals of computing: hardware, software, and operating systems.  
 
