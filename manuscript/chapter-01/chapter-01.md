@@ -16,7 +16,7 @@ Are you ready to learn one of the most powerful skills you can master in the mod
 
 A computer is anything that performs computations. Computations are mathematical or logical operations. This means that if you can count or make decisions based on logic, you are technically a computer. In fact, before the digital age, the term "computer" was generally used to refer to humans that were good at mathematics.  
 
-Of course, nowadays, and for our purposes, a computer is assumed to be a digital device that can perform computations.  
+Of course, nowadays, and for our purposes, a computer is assumed to be a digital device that can perform computations, like a desktop, a laptop, a smartphone, or even simpler devices like digital calculator and TV remote controls. If it has a microprocessor then it is a computer.  
 
 A computer program is a set or sequence of instructions for a computer to perform. Programming is the act of writing a computer program, and one who does so is a programmer.  
 
@@ -155,6 +155,34 @@ There are three types of errors that a programmer can make when writing C code:
 
 - **Runtime errors:** If the program compiles but fails while executing, this is called a runtime error. Sometimes this can cause abnormal termination of a program (e.g. the program crashes).  
 
-- **Logical errors:** If the program runs but produces the wrong output, then a logical error is usually the cause. These are semantic errors.  
+- **Logical errors:** If the program runs but produces the wrong output, then a logical error is usually the cause. These are semantic errors where the code is working but not doing what the programmer intended.  
 
 A compiled program is often referred to as a software application. A software application is only part of a final software product, which can also consist of documentation, intangible components like data, and sometimes physical components like packaging or storage media.  
+
+## The Flow of Program Development in C  
+
+The flow of program development in C is an iterative process that repeats until the programmer has achieved what they set out to accomplish by writing the program.  
+
+1. The programmer writes or edits the source code in a text editor to implement or correct a piece of functionality. When this functionality is ready to be tested, the programmer saves the program.  
+
+2. Now the programmer compiles the program with a compiler. If the compiler fails to compile it will produce one or more syntax errors that may or may not contain helpful information on what went wrong and how to fix the program. At this point, the programmer must return to step 1 and fix any syntax errors.  
+
+3. If the program successfully compiles then it can be executed, and the results can be tested. If unexpected results are produced for any input, then we have found runtime errors or logical errors and must return to step 1 to correct them.  
+
+4. If our desired program is fully implemented and runs correctly then the process stops here. Otherwise, if we still have more functionality to implement, we return to step 1 to implement the next piece of functionality.  
+
+## Why You Should Learn Programming  
+
+1. Programming teaches you to think logically and systematically  
+2. You can create or control nearly anything with software  
+3. Unlock career and academic opportunities
+4. Automate the boring (and difficult) stuff
+5. Unlock career and academic opportunities
+
+## Why Should You Learn C Programming As Your First Language?  
+
+Why should you learn C programming as your first language?  
+
+C instructions map extremely closely to the actual hardware functions of a computer, which we will learn in the next chapter. This means that by learning C you will also be learning the funamental way that computers work.  
+
+C is an older language, but it underpins a lot of modern computer technology like Linux, macOS, and even Windows. A lot of applications are written in C, and some of the larger programming languages are built with C as a base. The syntax and keywords of many other languages are also similar to C, so if you learn C, you will have a foot up in learning other languages.  
