@@ -47,7 +47,7 @@ In this cycle it:
 
 1. Fetches the next programming instruction from main memory
 2. Decodes the instruction from binary to determine the instruction
-3. Execute the instruction, accessing and modifying data from the main memory if instructed
+3. Executea the instruction, accessing and modifying data from the main memory if instructed to do so
 4. Back to step 1 to fetch the next instruction
 
 ### Hardware: Main Memory  
