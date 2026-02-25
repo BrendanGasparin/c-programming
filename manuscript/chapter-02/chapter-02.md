@@ -41,6 +41,8 @@ Processors can perform mathematical operations and make logical decisions.
 
 The CPU is continually running through the fetch-decode-execute cycle.
 
+![The fetch-decode-execute cycle of the CPU](../../assets/diagrams/chapter-02/itcp-diagram-ch02-002-cpu-cycle.png)
+
 In this cycle it:  
 
 1. Fetches the next programming instruction from main memory
