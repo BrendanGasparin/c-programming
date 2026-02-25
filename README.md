@@ -13,5 +13,5 @@ It is written in Markdown.
 
 1. [Introduction to Computer Programming (Using the C Language)](./manuscript/chapter-01/chapter-01.md)  
 2. [Computer Fundamentals: Hardware, Software, and Operating Systems](./manuscript/chapter-02/chapter-02.md)
-2. Setting Up A Software Development Environment  
-3. Bits, Bytes, and Binary: Data Representation in Digital Computers  
+3. Setting Up A Software Development Environment  
+4. Bits and Bytes: Number Systems and Data Representation in Digital Computers  
