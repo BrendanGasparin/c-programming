@@ -20,13 +20,20 @@ A computer requires both hardware and software to operate. The hardware can add 
 In order to be useful and perform mathematical operations on data, a modern computer needs the following hardware components:  
 
 - Central processing unit (CPU)  
-- Main memory  
+- Main memory
+- Connections between components (particularly the CPU and main memory)
 - Secondary memory  
 - Input and output devices  
 - Connections between components  
 
+The two most important components are the central processing unit (CPU) and the main memory. The CPU retrieves data from the memory, performs operations on that data, and writes data back to the memory.  
+
+![The connection between the CPU and RAM](../../assets/diagrams/chapter-02/itxp-diag-ch02-2.1-hardware.png)
+
+There are many other components that can be incorporated into computers and controlled by computers, but first we will look more closely at the CPU and main memory.  
+
 ### Hardware: The Central Processing Unit (CPU)  
-The component that executes program instructions is called a processor, or microprocessor. In a modern computer, this is a silicon chip. There are many different types of processors. Some are for general use, some specialise in numerical mathematics, and others specialise in graphical operations.  
+The component that executes program instructions is called a processor, or microprocessor. In a modern computer, this is a silicon chip. There are many different types of processors. Some are for general use, some specialise in arithmetic, and others specialise in graphical operations.  
 
 Computers generally have one or more processors, but conceptually (and historically) a computer has a single central processing unit (also called a CPU) that executes program instructions.  
 
