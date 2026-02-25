@@ -57,9 +57,11 @@ In this way, the functionality of a computer is split in two. The main memory ho
 
 Main memory is made of memory locations, called cells. These cells each store a number of bits called a word. This is normally eight (8) bits (i.e. one byte). Values too large to be stored in a single word will be stored in consecutive (i.e. contiguous) cells.  
 
+![Memory cells in a computer's primary memory](../../assets/diagrams/chapter-02/itcp-diagram-ch02-003-memory.png)
+
 In the same way a house or apartment has a unique address, so does a memory location. This allows the CPU to find the memory address so values can be read or written to the memory. These addresses are unique numeric identifiers. Like other numbers, a computer expresses these internally as binary numbers, but they are sometimes also represented in hexadecimal, a number system consisting of sixteen digits (0 through 9 followed by A through F). We will look at hexadecimal in chapter 4.  
 
-Main memory stores information as electricity in RAM chips. When a computer is powered off, the RAM loses electricity and forgets all of the information that was stored. Main memory is extremely fast, which is vital for a computer that has to perform a lot of operations, but it is also volatile: when a computer loses power, the main memory loses all of its stored information.  
+Main memory usually stores information as electricity in RAM chips. When a computer is powered off, the RAM loses electricity and forgets all of the information that was stored. Main memory is extremely fast, which is vital for a computer that has to perform a lot of operations, but it is also volatile: when a computer loses power, the main memory loses all of its stored information.  
 
 If we want to retain information when a computer is powered off, we need another type of memory.  
 
