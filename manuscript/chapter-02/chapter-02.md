@@ -1,6 +1,6 @@
 # 2. Computer Fundamentals: Hardware, Software, and Operating Systems  
 
-In order to truly understand programming in the C language we need to understand the fundamentals of computing: hardware, software, and operating systems.  
+To truly understand programming in the C language we need to understand the fundamentals of computing: hardware, software, and operating systems.  
 
 ## Hardware and Software  
 
@@ -12,7 +12,7 @@ Software is programs and data: information stored in some format.
 
 A program is a series of instructions, as we have discussed.
 
-Data is the raw information that a program manipulates. These are represented in binary numbers (zeroes and ones) which we will discuss in a future chapter, but binary numbers can also be used to represent human-readable numbers, text, images, sound, video, and anything else that mathematics can possibly represent.  
+Data is the raw information that a program manipulates. Data in a computer is represented in binary numbers (zeroes and ones) which we will discuss in a future chapter, but binary numbers can also be used to represent human-readable numbers, text, images, sound, video, and anything else that mathematics can possibly represent.  
 
 A computer requires both hardware and software to operate. The hardware can add one plus one, but only if software (i.e. a program) tells it to do so. Without software, a computer is just an inert bundle of physical components. Without hardware, software is just a series of instructions with nothing to execute them.  
 
@@ -80,7 +80,7 @@ Software, as we have discussed, is executable programs. Software can be divided 
 
 The **operating system (OS)** controls the computer hardware and provides a user interface so that humans can run and interact with programs. It manages computer resources such the CPU, memory, and file system.  
 
-An **application program** refers to any software that is not part of the operating system. In this book, we will be programminging software applications.  
+An **application program** refers to any software that is not part of the operating system. In this book, we will be programming software applications.  
 
 Software must have an **interface** to allow users to interact with it.  
 
@@ -90,9 +90,9 @@ A **graphical user interface (GUI)** allows the user to interact with software t
 
 ### Software: Operating System (OS)
 
-The operating system is special software that controls the computer hardware and provides a user interface to users so that they can run application programs.
+The operating system is special software that controls the computer hardware and provides a user interface to users so that they can run application programs.  
 
-The operating system manages computer resources such as:
+The operating system manages computer resources such as:  
 
 - The central processing unit (CPU)  
 - Main memory (RAM)  
@@ -100,7 +100,9 @@ The operating system manages computer resources such as:
 - Other devices such as input/output devices  
 - Programs/processes (a running program is known as a process)  
 
-The operating system also provides an interface to the computer hardware for software applications. This is what allows our programs to access the CPU, keyboard input, and other devices. Functionality like this, built into the operating system, allows application programmers to implement certain features (e.g. reading keyboard input) without having to reinvent the wheel every time they write a program.
+The operating system also provides an interface to the computer hardware for software applications. This is what allows our programs to access the CPU, keyboard input, and other devices. Functionality like this, built into the operating system, allows application programmers to implement certain features (e.g. reading keyboard input) without having to reinvent the wheel every time they write a program.  
+
+Conceptually, the operating system is a layer of software between a computer's hardware, other software applications, and users.  
 
 Different operating systems used in the real world include the Windows family of operating systems, Linux-based operating systems, macOS, and smartphone operating systems like iOS and Android.  
 
