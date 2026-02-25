@@ -8,7 +8,7 @@ This will involve learning to think logically and creatively, solving problems s
 
 We are going to learn to program using the C language, a relatively old computer language that still underlies the operations of most modern systems today.  
 
-The C language is popular and relevant in the modern world and is ideal for teaching the low level fundamentals of programming that can be abstracted away by more modern languages.  
+The C language is popular and relevant in the modern world and is ideal for teaching the low-level fundamentals of programming and computer science that can be abstracted away by more modern languages.  
 
 Are you ready to learn one of the most powerful skills you can master in the modern world? Let's go!  
 
@@ -20,7 +20,7 @@ Of course, nowadays, and for our purposes, a computer is assumed to be a digital
 
 A computer program is a set or sequence of instructions for a computer to perform. Programming is the act of writing a computer program, and one who does so is a programmer.  
 
-In order to be useful in the real world, a computer (and most computer programs) must be able to accept input from the outside world for computation, and output the result of its computations in some way.  
+To be useful in the real world, a computer (and most computer programs) must be able to accept input from the outside world for computation and output the result of its computations in some way.  
 
 This essentially makes a computer program a black box with input going in one end and output coming out the other.  
 
@@ -29,7 +29,7 @@ This essentially makes a computer program a black box with input going in one en
 
 Obfuscated inside the box is whatever algorithms, problem-solving processes, and computer instructions the programmer implemented when they wrote the program. These are applied to the input to give an output.  
 
-For example, an electronic cash register might be programmed to sum the scanned items being purchased by a customer. If the program is correctly implemented then the user does not need to know the specifics of what is in the program's "black box".  
+For example, an electronic cash register might be programmed to sum the scanned items being purchased by a customer. If the program is correctly implemented, then the user does not need to know the specifics of what is in the program's "black box".  
 
 A computer game takes input from a player using controls, applies that input to the player's character in the game, and then outputs the result on the screen and speakers.  
 
@@ -53,14 +53,14 @@ A programming language specifies words and symbols that can be used for writing 
 
 A computer language is much like a human language. Human languages also specify words, punctuation, and rules that can be used to form understandable sentences.  
 
-A program can be thought of like a written language. A written language (like English) is also composed of words and punctuation, and the rules that combine these words and punctuation into phrases, sentences, and paragraphs that can be meaninfully interpreted by a human reader.
+A program can be thought of like a written language. A written language (like English) is also composed of words and punctuation, and the rules that combine these words and punctuation into phrases, sentences, and paragraphs that can be meaningfully interpreted by a human reader.
 
 Take the example of a letter (or email).  
 
 ![A letter divided into sections.](../../assets/diagrams/chapter-01/itp=diagram-ch01-002-message.png)  
 *Figure 2. An example of a letter or email.*  
 
-A letter consists of sections, like the the salutation, the body, the complimentary close, and the signature. Each section is comprised of lines or paragraphs, which in turn consist of words and punctuation. There are various rules that can be used to create a grammatically correct and meaninful sentence. For instance, in English, a sentence ends in punctuation (a period, exclamation mark, or question mark). Commas are used to end the saltuation and separate the complimentary close from the signature. Names such as Mario and Princess Toadstool have their first letter captialised.  
+A letter consists of sections, like the salutation, the body, the complimentary close, and the signature. Each section is comprised of lines or paragraphs, which in turn consist of words and punctuation. There are various rules that can be used to create a grammatically correct and meaningful sentence. For instance, in English, a sentence ends in punctuation (a period, exclamation mark, or question mark). Commas are used to end the salutation and separate the complimentary close from the signature. Names such as Mario and Princess Toadstool have their first letter captialised.  
 
 Similarly, a program might be divided into sections: one or more functions, which are each comprised of one or more program statements, which are in turn each composed of words and symbols that follow rules to create code that translates into computer instructions.  
 
@@ -73,7 +73,7 @@ Functions are named blocks of code. They consist of one or more programming stat
 
 Programming statements consist of words, symbols, and white space, just like an English sentence. The words and symbols have specific meanings or uses in the C language. For example, `printf` prints whatever follows it in the parentheses and double-quote marks.  
 
-This program simply prints the message `hello, world` to the computer's ouput (e.g. the monitor).
+This program simply prints the message `hello, world` to the computer's output (e.g. the monitor).
 
 Words and symbols in C represent things known as tokens. Tokens can be divided into:  
 
@@ -99,9 +99,9 @@ Code can also contain whitespace (spaces, tabs, and newlines). Different program
 
 As well as the words and symbols that comprise a language, programming languages have **syntax** and **semantic** rules, just like human written language.  
 
-The **syntax** or **syntactical rules** of a human language define how words and symbols are combined to communicate meaning. The syntactical rules of a program define how to make valid program statements. Syntactical rules inclusw the correct sequencing of words and symbols, and the grammatical rules used to put them together.  
+The **syntax** or **syntactical rules** of a human language define how words and symbols are combined to communicate meaning. The syntactical rules of a program define how to make valid program statements. Syntactical rules include the correct sequencing of words and symbols, and the grammatical rules used to put them together.  
 
-The **semantic** meaning of a statement is what a statement's meaning in a given language. In our example English letter, this is Princess Toadstool asking Mario to come to the castle for a cake. In a programming language, this equates to what a piece of code will do if executed.  
+The **semantic** meaning of a statement is what a statement's meaning in a language. In our example English letter, this is Princess Toadstool asking Mario to come to the castle for a cake. In a programming language, this equates to what a piece of code will do if executed.  
 
 A syntax error is an error in the syntactical rules of a programming language. A program will only run in C if it follows the exact rules of the language.  
 
