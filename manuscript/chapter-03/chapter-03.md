@@ -4,13 +4,23 @@ Computers only understand electricty, which can be expressed as zeroes and ones:
 
 ## Number Systems: Unary, Binary, Decimal, Hexadecimal, and Octal
 
-There are many number systems for representing values in the world of mathematics. Humans tend to count using unary (base-1), and write numerals in decimal (base-10). We will take some time to explore different number systems so we can understand how data is represented in computers, and in the C programming language.  
+There are many number systems for representing values in the world of mathematics. Humans tend to count using unary (base-1), and write numerals in decimal (base-10). Computers only know binary (base-2). So how do we represent decimal numbers and things like text programming statements in binary?  
+
+WWe will take some time to explore different number systems so we can understand how data is represented in computers, and in the C programming language.  
 
 ### The Unary System (Base-1)
 
-The unary system (also known as base-1) is the number system people use on their hands, or when they tally. Each digit represents an increment in the value of the number. For example, one finger extended usually means one, two fingers extended means two, three fingers extended means three, etc.  
+The unary system (also known as base-1) is the number system people use on their hands, or when they tally.  
+
+![A diagram of the unary numbering system showing fingers and tally marks numbering one to five.](../../assets/diagrams/chapter-03/itcp-diagram-ch03-001-unary.png)
+
+Each digit represents an increment in the value of the number. For example, one finger extended usually means one, two fingers extended means two, three fingers extended means three, etc.  
 
 This is called base-1 because there is only one possible digit (i.e. a finger, tally mark, etc.).  
+
+With the unary system, five digits can count five numbers.  
+
+What if there was a more efficient way to use these digits. For example, what if weighted the value of a digit based on its position?  
 
 ### The Binary System (Base-2)
 
@@ -20,29 +30,43 @@ Binary is a positional number system, which means that the position of a bit in 
 
 But in a binary word (e.g. an 8-bit byte), the position of each digit affects the value represented by that digit. In this way, the number zero can be represented by a zero, or all zeroes. e.g. 
 
-`00000000₂`  
+`000₂`  
 
 Note that the subscript `₂` at the end of the number indicates that it is a binary number. This is used to differentiate it from decimal numbers and is not actually a digit or part of the final value.  
 
 The right-most digit in a binary number represents the value `1`. So, in an 8-bit binary word, the number `1` can be represented as:  
 
-`00000001₂`  
+`001₂`  
 
 The second digit from the right represents the value `2`. To represent the number `2` in an 8-bit binary word we set all the other digits to zero, and the second digit from the right to one.
 
-`00000010₂`  
+`010₂`  
 
 Three is represented by turning on the right-most digit (representing one) and the second digit from the right (which represents two). The values of these digits are added together to get 3.  
 
-`00000011₂`  
+`011₂`  
 
 The value of the third digit from the right is 4, so to represent 4 we need only set this digit to 1.  
 
-`00000100₂`  
+`100₂`  
 
 And to get five we keep this digit as one, but also change the rightmost digit to one. Four plus one equals five.  
 
-`00000101₂`  
+`101₂`  
+
+How does this work? As we have already stated, the position of each digit affects the value of the number that it represents. 
+
+
+
+The rightmost digit is multiplied by one. If the rightmost digit is a `1`, then `1 * 1 = 1`, so the value of that digit is one. If the rightmost digit is a `0`, then `0 * 1 = 0`, so the value of that digit is zero.  
+
+The next digit to the left is multiplied by two. If it is a `1` then `1 * 2 = 2` so the value of that digit is two. Once again, if it is multiplied by zero then `0 * 2 = 0`, so the value of that digit is zero.  
+
+The next digit to the left (the third digit) is multiplied by four. If it is a `1` then `1 * 4 = 4` so the value of that digit is four. the third digit is zero then `0 * 4 = 0` so the value is zero.  
+
+When all the digits and their values are known, those with a digit of `1` can be added together for the final total. Those with a `0` can be discarded.  
+
+You might notice that, in binary, the rightmost place is multiplied by one. For each place removed to its left, the digit's multiplier is doubled.  
 
 As we have discussed, zeroes and ones can be represented in a computer with electricity. For example, a zero might be represented by zero voltage, with one represented by 5 volts.  
 
