@@ -62,6 +62,14 @@ The rightmost digit is multiplied by `10^0`, or `1`. The next digit to the left 
 
 Binary works exactly the same. But because we only have two digits, we multiply the bit in each position by `2` to the power of how many positions it is from the rightmost digit.  
 
+This is why powers of `2` come up so much in computer science: hardware specifications, computer memory, hard disk space. For example, bits are normally managed in groups of eight. Eight bits are a byte.   
+
+The more bits you have, the greater range of values you can represent. `n` bits can represent `2^n` values. Modern computers can use 32-bits (four bytes) to represent a range of about 4 billion integers (or 2 billion if you include negative integers). With 64-bit words (eight bytes) we can represent `2^64` values, which is quite a large number.  
+
+For the sake of simplicity, we will look at 8-bit words.  
+
+
+ 
 ---
 
 Note that if we have a value that is too large to be represented by a particular piece of memory, this might cause unexpected behaviour like rolling back to zero or overwriting memory that should not be overwritten.  
