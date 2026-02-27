@@ -72,7 +72,7 @@ So it takes three digits to represent eight values, from `0` to `7`. In unary, t
 
 Using binary, how many values can we represent in five digits?  
 
-You may have notices that the place value of each position doubles the further we move to the left. From this we can extrapolate the place values of the remaining positions.  
+You may have notices that the place value of each position doubles the further we move to the left. From this we can extrapolate the place value of the remaining position. The fifth digit has a place value of `16`.  
 
 ![Thirty one represented as a 5-bit binary word.](../../assets/diagrams/chapter-03/itcp-diagram-ch03-011-binary-31.png)  
 
