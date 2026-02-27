@@ -46,17 +46,29 @@ Three is represented by turning on the right-most digit (representing one) and t
 
 ![Three represented as a 5-bit binary word.](../../assets/diagrams/chapter-03/itcp-diagram-ch03-005-binary-3.png)
 
-The value of the third digit from the right is 4, so to represent 4 we need only set this digit to 1.  
+The **place value** of the third digit (from the right) is 4, so to represent `4` change the other columns to zero and set the third digit to 1.  
 
-`100₂`  
+Note that this is similar to "carrying" a number in decimal mathmematics.  When we need to use a new digit to represent larger numbers we reset all the previous digits to zero and "carry" to the next digit.  
 
-And to get five we keep this digit as one, but also change the rightmost digit to one. Four plus one equals five.  
+![Four represented as a 5-bit binary word.](../../assets/diagrams/chapter-03/itcp-diagram-ch03-006-binary-4.png)
 
-`101₂`  
+To get five we keep the third digit as one (because it has a place value of four) and also change the rightmost digit to one (because it has a place value of one). Four plus one equals five, so the final value equals five.  
 
-How does this work? As we have already stated, the position of each digit affects the value of the number that it represents. 
+![Five represented as a 5-bit binary word.](../../assets/diagrams/chapter-03/itcp-diagram-ch03-006-binary-4.png)
 
+Six is a combination ones in the places valued `4` and `2`, i.e. `00101`.  
 
+![Six represented as a 5-bit binary word.](../../assets/diagrams/chapter-03/itcp-diagram-ch03-008-binary-6.png)
+
+Seven is all three of the first three bits set to one: `00111`.  
+
+If we want to represent a higher number, we need to use an additional bit. Once more, we would set the rightmost bits of `00111` to zero and set the next bit to the left as one.  
+
+So it takes three digits to represent eight values, from `0` to `7`. In unary, this would take seven digits, or two hands.  
+
+Using binary, how many values can we represent in five digits?  
+
+How does this work? As we have already stated, the position of each digit affects the value of the number that it represents.  
 
 The rightmost digit is multiplied by one. If the rightmost digit is a `1`, then `1 * 1 = 1`, so the value of that digit is one. If the rightmost digit is a `0`, then `0 * 1 = 0`, so the value of that digit is zero.  
 
