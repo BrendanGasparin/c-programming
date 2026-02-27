@@ -10,7 +10,7 @@ WWe will take some time to explore different number systems so we can understand
 
 ### The Unary System (Base-1)
 
-The unary system (also known as base-1) is the number system people use on their hands, or when they tally.  
+The unary system (also known as base-1) is the number system people use when they count on their hands, or tally with marks.  
 
 ![A diagram of the unary numbering system showing fingers and tally marks numbering one to five.](../../assets/diagrams/chapter-03/itcp-diagram-ch03-001-unary.png)
 
@@ -24,27 +24,27 @@ What if there was a more efficient way to use these digits. For example, what if
 
 ### The Binary System (Base-2)
 
-Binary (or base-2) is another number system: the number system used by computers. Binary is comprised of bits, which stands for binary digit. "Bi" implies two, and there are only two binary digits: zero and one.  
+Binary (or base-2) is another number system: the number system used by computers. Binary is comprised of bits, which stands for binary digit. "Bi" implies two, and there are only two binary digits: zero and one. In a computer, these are often represented by electicity, or an absence of electricity (e.g. in an electronic component or connection).  
 
-Binary is a positional number system, which means that the position of a bit in a pattern of bits defines its possible value. In comparison, unary is a non-positional number system. The position of the digits (or tally marks) does not matter. Each digit is one increment, regardless of position.  
+Binary is a positional number system, which means that the position of a bit in a pattern of bits affects it final value. Let us take a binary value of 5 bits (i.e. binary digits).  
 
-But in a binary word (e.g. an 8-bit byte), the position of each digit affects the value represented by that digit. In this way, the number zero can be represented by a zero, or all zeroes. e.g. 
+The number zero can be represented by a zero, or all zeroes.  
 
-`000₂`  
+![Zero represented as a 5-bit binary word](../../assets/diagrams/chapter-03/itcp-diagram-ch03-002-binary.png)
 
-Note that the subscript `₂` at the end of the number indicates that it is a binary number. This is used to differentiate it from decimal numbers and is not actually a digit or part of the final value.  
+None of the digits are one, so their positions are not important. The value they each represent is multiplied by zero, so the whole binary word equals zero.  
 
-The right-most digit in a binary number represents the value `1`. So, in an 8-bit binary word, the number `1` can be represented as:  
+The right-most digit in a binary number (which we call the first digit) represents the value `1`. This is its **place value**. So, in a 5-bit binary word, the number `1` can be represented as `00000001`.  
 
-`001₂`  
+![One represented as a 5-bit binary word.](../../assets/diagrams/chapter-03/itcp-diagram-ch03-003-binary-1.png)
 
-The second digit from the right represents the value `2`. To represent the number `2` in an 8-bit binary word we set all the other digits to zero, and the second digit from the right to one.
+The second digit from the right represents the value `2`. Therefore, to represent the value `2` in an 8-bit binary word, we set all the other digits to zero, and the second digit (from the right) to one. This is because `2` is the **place value** of the second digit.  
 
-`010₂`  
+![Two represented as a 5-bit binary word.](../../assets/diagrams/chapter-03/itcp-diagram-ch03-004-binary-2.png)
 
 Three is represented by turning on the right-most digit (representing one) and the second digit from the right (which represents two). The values of these digits are added together to get 3.  
 
-`011₂`  
+![Three represented as a 5-bit binary word.](../../assets/diagrams/chapter-03/itcp-diagram-ch03-005-binary-3.png)
 
 The value of the third digit from the right is 4, so to represent 4 we need only set this digit to 1.  
 
