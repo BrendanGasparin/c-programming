@@ -10,49 +10,63 @@ WWe will take some time to explore different number systems so we can understand
 
 ### The Unary System (Base-1)
 
-The unary system (also known as base-1) is the number system people use when they count on their hands, or tally with marks.  
+To understand binary, we will first look at the unary system.  
+
+The unary system (also known as base-1) is the number system people use when they count on their hands, or tally with marks. It is the simplest way of representing numbers.  
+
+Instead of using place values like decimal or binary, unary represents numbers by repeating a single symbol, e.g. fingers, or tally marks.   
 
 ![A diagram of the unary numbering system showing fingers and tally marks numbering one to five.](../../assets/diagrams/chapter-03/itcp-diagram-ch03-001-unary.png)
 
-Each digit represents an increment in the value of the number. For example, one finger extended usually means one, two fingers extended means two, three fingers extended means three, etc.  
+Each digit represents an increment in the value of the number. For example, one finger usually means one, two fingers means two, three fingers means three, etc.  
 
-This is called base-1 because there is only one possible digit (i.e. a finger, tally mark, etc.).  
+This is called base-1 because there is only one symbol used to represent numbers (i.e. a finger, tally mark, etc.).  
 
 With the unary system, five digits can count five numbers.  
 
-What if there was a more efficient way to use these digits. For example, what if weighted the value of a digit based on its position?  
+What if there was a more efficient way to use these digits. For example, what if we weighted the value of a digit based on its position?  
 
 ### The Binary System (Base-2)
 
 Binary (or base-2) is another number system: the number system used by computers. Binary is comprised of bits, which stands for binary digit. "Bi" implies two, and there are only two binary digits: zero and one. In a computer, these are often represented by electicity, or an absence of electricity (e.g. in an electronic component or connection).  
 
-Binary is a positional number system, which means that the position of a bit in a pattern of bits affects it final value. Let us take a binary value of 5 bits (i.e. binary digits).  
+Binary is a positional number system, which means that the position of a bit in a pattern of bits affects it final value.
 
-The number zero can be represented by a zero, or all zeroes.  
+Let's look at a binary string of 5 bits.  
+
+The number zero can be represented with all zeroes.  
 
 ![Zero represented as a 5-bit binary word](../../assets/diagrams/chapter-03/itcp-diagram-ch03-002-binary.png)
 
-None of the digits are one, so their positions are not important. The value they each represent is multiplied by zero, so the whole binary word equals zero.  
+If a bit in a binary number is zero, then its value is zero, regardless of its place. So `00000` has a value of `0`.  
 
-The right-most digit in a binary number (which we call the first digit) represents the value `1`. This is its **place value**. So, in a 5-bit binary word, the number `1` can be represented as `00000001`.  
+The rightmost digit in a binary number (which we call the first digit) has a **place value** of `1`. If this bit is set to `1`, then we add the place value of the digit to the final value of the binary number. So, in a 5-bit binary word, the number `1` is represented as `00001`.  
 
 ![One represented as a 5-bit binary word.](../../assets/diagrams/chapter-03/itcp-diagram-ch03-003-binary-1.png)
 
-The second digit from the right represents the value `2`. Therefore, to represent the value `2` in an 8-bit binary word, we set all the other digits to zero, and the second digit (from the right) to one. This is because `2` is the **place value** of the second digit.  
+The second digit from the right has a **place value** of `2`. Therefore, to represent the value `2` in an 8-bit binary word, we set all the other digits to zero, and the second digit (from the right) to one.  
 
 ![Two represented as a 5-bit binary word.](../../assets/diagrams/chapter-03/itcp-diagram-ch03-004-binary-2.png)
 
-Three is represented by turning on the right-most digit (representing one) and the second digit from the right (which represents two). The values of these digits are added together to get 3.  
+So the value of a binary digit is determined by its position in the binary number. The first digit has a place value of `1`, and the second digit has a place value of `2`.  
+
+How do we represent the number `3`?
+
+`3` is represented by turning on the right-most digit (which has a place value of `1`) and the second digit from the right (which has a place value of two). The values of these digits are added together to get 3.  
 
 ![Three represented as a 5-bit binary word.](../../assets/diagrams/chapter-03/itcp-diagram-ch03-005-binary-3.png)
 
-The **place value** of the third digit (from the right) is 4, so to represent `4` change the other columns to zero and set the third digit to 1.  
+To determine the value of a binary number with more than one `1` bit, we can simply add the place values of those `1` bits together.  
 
-Note that this is similar to "carrying" a number in decimal mathmematics.  When we need to use a new digit to represent larger numbers we reset all the previous digits to zero and "carry" to the next digit.  
+But how do we know what the place values are without being told. The first place value (from the right) is `1`. The second is `2`.
+
+The place value of the third digit is `4`, so to represent `4` in binary we can set all the other columns to zero and set the third digit to 1.  
 
 ![Four represented as a 5-bit binary word.](../../assets/diagrams/chapter-03/itcp-diagram-ch03-006-binary-4.png)
 
-To get five we keep the third digit as one (because it has a place value of four) and also change the rightmost digit to one (because it has a place value of one). Four plus one equals five, so the final value equals five.  
+Note that this is similar to "carrying" a number in decimal mathematics. We incrememnt a new digit and set all the ones to its right back to zero.  
+
+To get `5` we keep the third digit as one and also change the first digit to one. Four plus one equals five, so the final value equals five.  
 
 ![Five represented as a 5-bit binary word.](../../assets/diagrams/chapter-03/itcp-diagram-ch03-006-binary-4.png)
 
@@ -64,7 +78,7 @@ Seven is all three of the first three bits set to one: `00111`.  These are multi
 
 ![Seven represented as a 5-bit binary word.](../../assets/diagrams/chapter-03/itcp-diagram-ch03-009-binary-7.png)
 
-If we want to represent a higher number, we need to use an additional bit. Once more, we would set the rightmost bits of `00111` to zero and set the next bit to the left as one.  
+If we want to represent a higher number, we need to use an additional bit. Once more, we would carry the three rightmost bits of `00111`, flipping them to zero, and setting the fourth bit to one.  
 
 ![Eight represented as a 5-bit binary word.](../../assets/diagrams/chapter-03/itcp-diagram-ch03-010-binary-8.png)
 
@@ -76,7 +90,7 @@ You may have notices that the place value of each position doubles the further w
 
 ![Thirty one represented as a 5-bit binary word.](../../assets/diagrams/chapter-03/itcp-diagram-ch03-011-binary-31.png)  
 
-In binary, we can represent 32 values with five digits (from zero to thirty one). A binary number can represent as many values as `2^n` where n is the number of bits.
+In binary, we can represent 32 values with five digits (from zero to thirty one). A binary number can represent as many values as `2^n` where n is the number of bits.  
 
 How does this work? As we have already stated, the position of each digit affects the value of the number that it represents.  
 
