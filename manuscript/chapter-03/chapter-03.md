@@ -56,17 +56,25 @@ To get five we keep the third digit as one (because it has a place value of four
 
 ![Five represented as a 5-bit binary word.](../../assets/diagrams/chapter-03/itcp-diagram-ch03-006-binary-4.png)
 
-Six is a combination ones in the places valued `4` and `2`, i.e. `00101`.  
+Six is a combination of ones in the places valued `4` and `2`, i.e. `00101`.  
 
 ![Six represented as a 5-bit binary word.](../../assets/diagrams/chapter-03/itcp-diagram-ch03-008-binary-6.png)
 
-Seven is all three of the first three bits set to one: `00111`.  
+Seven is all three of the first three bits set to one: `00111`.  These are multiplied by their place values and added together to equal `7`.  
+
+![Seven represented as a 5-bit binary word.](../../assets/diagrams/chapter-03/itcp-diagram-ch03-009-binary-7.png)
 
 If we want to represent a higher number, we need to use an additional bit. Once more, we would set the rightmost bits of `00111` to zero and set the next bit to the left as one.  
+
+![Eight represented as a 5-bit binary word.](../../assets/diagrams/chapter-03/itcp-diagram-ch03-010-binary-8.png)
 
 So it takes three digits to represent eight values, from `0` to `7`. In unary, this would take seven digits, or two hands.  
 
 Using binary, how many values can we represent in five digits?  
+
+You may have notices that the place value of each position doubles the further we move to the left. From this we can extrapolate the place values of the remaining positions.  
+
+![Thirty one represented as a 5-bit binary word.](../../assets/diagrams/chapter-03/itcp-diagram-ch03-011-binary-31.png)  
 
 How does this work? As we have already stated, the position of each digit affects the value of the number that it represents.  
 
