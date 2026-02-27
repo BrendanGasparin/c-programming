@@ -76,27 +76,29 @@ You may have notices that the place value of each position doubles the further w
 
 ![Thirty one represented as a 5-bit binary word.](../../assets/diagrams/chapter-03/itcp-diagram-ch03-011-binary-31.png)  
 
+In binary, we can represent 32 values with five digits (from zero to thirty one). A binary number can represent as many values as `2^n` where n is the number of bits.
+
 How does this work? As we have already stated, the position of each digit affects the value of the number that it represents.  
 
-The rightmost digit is multiplied by one. If the rightmost digit is a `1`, then `1 * 1 = 1`, so the value of that digit is one. If the rightmost digit is a `0`, then `0 * 1 = 0`, so the value of that digit is zero.  
+The bit in each each place is multiplied by the place value for that position, and then these products are added together to give the final value. In this way we can represent any integer by combining enough bits.  
 
-The next digit to the left is multiplied by two. If it is a `1` then `1 * 2 = 2` so the value of that digit is two. Once again, if it is multiplied by zero then `0 * 2 = 0`, so the value of that digit is zero.  
+![Sixty seven represented as an 8-bit binary word.](../../assets/diagrams/chapter-03/itcp-diagram-ch03-012-binary-67.png)
 
-The next digit to the left (the third digit) is multiplied by four. If it is a `1` then `1 * 4 = 4` so the value of that digit is four. the third digit is zero then `0 * 4 = 0` so the value is zero.  
+Bits can be represented in a computer with electricity. For example, a zero might be represented by zero voltage, and one represented by 5 volts.  
 
-When all the digits and their values are known, those with a digit of `1` can be added together for the final total. Those with a `0` can be discarded.  
+Binary can then be stored in the charges of transistors. These are like switches than can be turned on or off by capturing or discharging electricity. A transistor with no electricity equals zero. A transistor with electricity equals one. Modern computers contain millions of transistors, allowing them to work with a lot of large binary values.  
 
-You might notice that, in binary, the rightmost place is multiplied by one. For each place removed to its left, the digit's multiplier is doubled.  
+Binary can also be transmitted through connections like wires in the form of pulses of electricity as well.  
 
-As we have discussed, zeroes and ones can be represented in a computer with electricity. For example, a zero might be represented by zero voltage, with one represented by 5 volts.  
-
-Binary can then be expressed in transistors. Modern computers contain millions of transistors. These are like switches than can be turned on or off by capturing or discharging electricity. A transistor with no electricity equals zero. A transistor with electricity equals one.  
+Binary is used in computers because it translates so well to the world of electronics. Humans do not use binary in written mathematics. They use the decimal system. But it turns out the decimal system and binary have a lot in common.  
 
 ### The Decimal Number System (Base-10)
 
-Much as computer languages work in the same way as human languages, the computer's number of system of binary essentially works the same way as the numerical system most humans use: decimal.  
+Much as computer languages work in the same way as human languages, the computer's number of system of binary essentially works the same way as the numerical system most humans use: the decimal number system (base-10).  
 
-Decimal is the number system most of us are familiar with, with ten digits from `0` to `9`. Like binary, decimal is a positional system. The position of the digit affects its total value. For example, in the number `42`, the rightmost digit has a value of `2`, but the second digit to the right, the `4`, has a value of `4 * 10`, because it is in what elementary mathematics calls the "tens" column. Similarly, in the number `187`, the `1` had a value of `100`, because it is in the "hundreds" column, the third from the right.  
+Decimal is the written number system most of us are familiar with, with ten numerals ranging from `0` to `9`. Like binary, decimal is a positional system. The position of the digit affects its total value. For example, in the number `42`, the rightmost digit has a value of `2`, but the second digit to the right, the `4`, has a value of `4 * 10`. This is because, in elementary school mathematics, the first column on the right is a "ones" column and the next column to the left is the "tens" column.  
+
+Similarly, in the number `187`, the `1` had a value of `100`, because it is in the "hundreds" column, the third from the right.  
 
 What is the pattern here? In each column from right to left we are multiplying the digit in that place by ten to the power of how many positions it is from the rightmost digit.  
 
