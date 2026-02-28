@@ -56,7 +56,7 @@ So the value of a binary digit is determined by its position in the binary numbe
 
 How do we represent the number `3`?
 
-`3` is represented by turning on the right-most digit (which has a place value of `1`) and the second digit from the right (which has a place value of two). The values of these digits are added together to get 3.  
+`3` is represented by turning on the right-most digit (with a place value of `1`) and the second digit from the right (with a place value of `2`). The values of these digits are added together to get `3`.  
 
 ![Three represented as a 5-bit binary word.](../../assets/diagrams/chapter-03/itcp-diagram-ch03-005-binary-3.png)
 
@@ -64,7 +64,7 @@ To determine the value of a binary number with more than one `1` bit, we can sim
 
 But how do we know what the place values are without being told. The first place value (from the right) is `1`. The second is `2`.
 
-The place value of the third digit is `4`, so to represent `4` in binary we can set all the other columns to zero and set the third digit to 1.  
+The place value of the third digit is `4`, so to represent `4` in binary we can set all the other columns to zero and set the third digit to `1`.  
 
 ![Four represented as a 5-bit binary word.](../../assets/diagrams/chapter-03/itcp-diagram-ch03-006-binary-4.png)
 
@@ -108,7 +108,7 @@ Binary can then be stored in the charges of transistors. These are like switches
 
 Binary can also be transmitted through connections like wires in the form of pulses of electricity as well.  
 
-Binary is used in computers because it translates so well to the world of electronics.  
+Binary is used in computers because it translates so well to the world of electronics.   
 
 Humans do not use binary in written mathematics. They use the decimal number system. "Dec" implies 10 and the decimal number system has 10 digits, `0` through `9`. But it turns out that the decimal system and binary have a lot in common.  
 
@@ -118,9 +118,13 @@ Much as computer languages work in the same way as human languages, the computer
 
 Decimal is the written number system most of us are familiar with, with ten numeric symbols ranging from `0` to `9`. Like binary, decimal is a positional system. The position of the digit affects its total value.  
 
-You may rmember learning about this in your childhood. In the number `42`, the rightmost digit has a value of `2`, but the second digit to the right, the `4`, has a value of `4 * 10`. This is because, in elementary school mathematics, the first column on the right is a "ones" column and the next column to the left is the "tens" column.  
+![Decimal representation of the number 42.](../../assets/diagrams/chapter-03/itcp-diagram-ch03-013-decimal-42.png)
 
-Similarly, in the number `187`, the `1` had a value of `100`, because it is in the "hundreds" column, the third from the right.  
+You may rmember learning about this in your childhood. In the number `42`, the rightmost digit, `2` has a value of `2`, but the second digit to the right, the `4`, has a value of `4 * 10`. This is because, in elementary school mathematics, the first column on the right is a "ones" column and the next column to the left is the "tens" column.  
+
+![Decimal representation of the number 187.](../../assets/diagrams/chapter-03/itcp-diagram-ch03-014-decimal-187.png)
+
+Similarly, in the number `187`, the `1` had a value of `100`, because it is in the third place from the right, the "hundreds" column. `8` is in the "tens" column so it has a value of `8 * 10 = 80`. `7` is in the "ones" column so its value is `7 * 1 = 7`. We get the final value by additing these products together, i.e. `(1 * 100) + (8 * 10) + (7 * 1) = 100 + 80 + 7 = 187`.  
 
 What is the pattern here? In each column from right to left we are multiplying the digit in that place by ten to the power of how many positions it is from the rightmost digit.  
 
