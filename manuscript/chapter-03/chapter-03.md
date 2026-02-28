@@ -158,4 +158,4 @@ It is theoretically possible to represent any base number system using these sam
 
 For example, the hexadecimal system (base-16) is used to represent things like memory and colour values with digits ranging from `0`to `9` and then `A` through `F`. The ocstal system (base-8) is used in Linux to represent file permissions with digits ranging from `0` to `7`.  
 
-The next chapter will look at how binary numbers can be used to represent other data than simple numeric values.  
+The next chapter will look at how binary numbers can be used to represent other data than simple numeric values, e.g. text, graphics, and audio.  
