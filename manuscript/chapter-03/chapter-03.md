@@ -1,12 +1,12 @@
 # Bits, Bytes, and Binary: Number Systems in Computer Science
 
-Computers only understand electricty, which can be expressed as zeroes and ones: voltage or no voltage. All data in a computer is represented by zeroes and ones. In this chapter we will learn how zeroes and ones can be used to express human-readable decimal numbers, as well as other things like alphabetical characters, text strings, images, audio, and video.  
+Computers only understand electricity, which can be expressed as zeroes and ones: voltage or no voltage. All data in a computer is represented by zeroes and ones. In this chapter we will learn how zeroes and ones can be used to express human-readable decimal numbers, as well as other things like alphabetical characters, text strings, images, audio, and video.  
 
-## Number Systems: Unary, Binary, Decimal, Hexadecimal, and Octal
+## Number Systems: Unary, Binary, and Decimal
 
 There are many number systems for representing values in the world of mathematics. Humans tend to count using unary (base-1), and write numerals in decimal (base-10). Computers only know binary (base-2). So how do we represent decimal numbers and things like text programming statements in binary?  
 
-WWe will take some time to explore different number systems so we can understand how data is represented in computers, and in the C programming language.  
+We will take some time to explore different number systems so we can understand how data is represented in computers, and in the C programming language.  
 
 ### The Unary System (Base-1)
 
@@ -14,7 +14,7 @@ To understand binary, we will first look at the unary system.
 
 The unary system (also known as base-1) is the number system people use when they count on their hands, or tally with marks. It is the simplest way of representing numbers.  
 
-Instead of using place values like decimal or binary, unary represents numbers by repeating a single symbol, e.g. fingers, or tally marks.   
+Instead of using place values like decimal or binary, unary represents numbers by repeating a single symbol, e.g. fingers, or tally marks.  
 
 ![A diagram of the unary numbering system showing fingers and tally marks numbering one to five.](../../assets/diagrams/chapter-03/itcp-diagram-ch03-001-unary.png)
 
@@ -30,7 +30,7 @@ What if there was a better way to use symbols to represent numbers? For example,
 
 Binary (or base-2) is another number system: the number system used by computers. Binary is comprised of bits, which stands for binary digit. "Bi" implies two, and there are only two binary digits: zero and one.
 
-In a computer, these are often represented by electicity, or an absence of electricity (e.g. in an electronic component or connection). So as well as representing zero and one, binary can be used to represent on versus off, true versus false, and other binary states.  
+In a computer, these are often represented by electricity, or an absence of electricity (e.g. in an electronic component or connection). So as well as representing zero and one, binary can be used to represent on versus off, true versus false, and other binary states.  
 
 Multiple binary digits can be used to create a binary word. The number of binary digits used to represent a number is called a word. For example, five binary digits is a 5-bit word.  
 
@@ -98,7 +98,7 @@ In binary, we can represent 32 values with five digits (from zero to thirty one)
 
 How does this work? As we have already stated, the position of each digit affects the value of the number that it represents.  
 
-The bit in each each place is multiplied by the place value for that position, and then these products are added together to give the final value. In this way we can represent any integer by combining enough bits.  
+The bit in each place is multiplied by the place value for that position, and then these products are added together to give the final value. In this way we can represent any integer by combining enough bits.  
 
 ![Sixty seven represented as an 8-bit binary word.](../../assets/diagrams/chapter-03/itcp-diagram-ch03-012-binary-67.png)
 
