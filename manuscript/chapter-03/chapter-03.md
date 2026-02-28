@@ -28,11 +28,15 @@ What if there was a more efficient way to use these digits. For example, what if
 
 ### The Binary System (Base-2)
 
-Binary (or base-2) is another number system: the number system used by computers. Binary is comprised of bits, which stands for binary digit. "Bi" implies two, and there are only two binary digits: zero and one. In a computer, these are often represented by electicity, or an absence of electricity (e.g. in an electronic component or connection).  
+Binary (or base-2) is another number system: the number system used by computers. Binary is comprised of bits, which stands for binary digit. "Bi" implies two, and there are only two binary digits: zero and one.
+
+In a computer, these are often represented by electicity, or an absence of electricity (e.g. in an electronic component or connection). So as well as representing zero and one, binary can be used to represent on versus off states, truth versus falsity, or any other binary decision.  
+
+Multiple binary digits can be used to create a binary word. The length of this word is the number of binary digits it contains. Five binary digits is a 5-bit word.  
 
 Binary is a positional number system, which means that the position of a bit in a pattern of bits affects it final value.
 
-Let's look at a binary string of 5 bits.  
+Let's look at a binary word of 5 bits, similar conceptually to a human hand, and see how many values we can represent with only five binary digits.  
 
 The number zero can be represented with all zeroes.  
 
@@ -70,7 +74,7 @@ To get `5` we keep the third digit as one and also change the first digit to one
 
 ![Five represented as a 5-bit binary word.](../../assets/diagrams/chapter-03/itcp-diagram-ch03-006-binary-4.png)
 
-Six is a combination of ones in the places valued `4` and `2`, i.e. `00101`.  
+Six is a combination of ones in the places valued `4` and `2`, because `4 + 2 = 6`.  
 
 ![Six represented as a 5-bit binary word.](../../assets/diagrams/chapter-03/itcp-diagram-ch03-008-binary-6.png)
 
@@ -100,17 +104,21 @@ The bit in each each place is multiplied by the place value for that position, a
 
 Bits can be represented in a computer with electricity. For example, a zero might be represented by zero voltage, and one represented by 5 volts.  
 
-Binary can then be stored in the charges of transistors. These are like switches than can be turned on or off by capturing or discharging electricity. A transistor with no electricity equals zero. A transistor with electricity equals one. Modern computers contain millions of transistors, allowing them to work with a lot of large binary values.  
+Binary can then be stored in the charges of transistors. These are like switches than can be turned on or off by capturing or discharging electricity. A transistor storing no electricity equals zero. A transistor storing electricity equals one. Modern computers contain millions of transistors, allowing them to work with a lot of large binary values.  
 
 Binary can also be transmitted through connections like wires in the form of pulses of electricity as well.  
 
-Binary is used in computers because it translates so well to the world of electronics. Humans do not use binary in written mathematics. They use the decimal system. But it turns out the decimal system and binary have a lot in common.  
+Binary is used in computers because it translates so well to the world of electronics.  
+
+Humans do not use binary in written mathematics. They use the decimal number system. "Dec" implies 10 and the decimal number system has 10 digits, `0` through `9`. But it turns out that the decimal system and binary have a lot in common.  
 
 ### The Decimal Number System (Base-10)
 
-Much as computer languages work in the same way as human languages, the computer's number of system of binary essentially works the same way as the numerical system most humans use: the decimal number system (base-10).  
+Much as computer languages work in the same way as human languages, the computer's number of system of binary (base-2) essentially works the same way as the numerical system most humans use: the decimal number system (base-10).  These number systems are not arbitrary. They have mathematical relationships that mean you can translate numbers between them.  
 
-Decimal is the written number system most of us are familiar with, with ten numerals ranging from `0` to `9`. Like binary, decimal is a positional system. The position of the digit affects its total value. For example, in the number `42`, the rightmost digit has a value of `2`, but the second digit to the right, the `4`, has a value of `4 * 10`. This is because, in elementary school mathematics, the first column on the right is a "ones" column and the next column to the left is the "tens" column.  
+Decimal is the written number system most of us are familiar with, with ten numeric symbols ranging from `0` to `9`. Like binary, decimal is a positional system. The position of the digit affects its total value.  
+
+You may rmember learning about this in your childhood. In the number `42`, the rightmost digit has a value of `2`, but the second digit to the right, the `4`, has a value of `4 * 10`. This is because, in elementary school mathematics, the first column on the right is a "ones" column and the next column to the left is the "tens" column.  
 
 Similarly, in the number `187`, the `1` had a value of `100`, because it is in the "hundreds" column, the third from the right.  
 
@@ -122,13 +130,11 @@ The rightmost digit is multiplied by `10^0`, or `1`. The next digit to the left 
 
 Binary works exactly the same. But because we only have two digits, we multiply the bit in each position by `2` to the power of how many positions it is from the rightmost digit.  
 
-This is why powers of `2` come up so much in computer science: hardware specifications, computer memory, hard disk space. For example, bits are normally managed in groups of eight. Eight bits are a byte.   
+This is why powers of `2` come up so much in computer science: hardware specifications, computer memory, hard disk space. For example, bits are normally managed in groups of eight. Eight bits are a byte.  
 
 The more bits you have, the greater range of values you can represent. `n` bits can represent `2^n` values. Modern computers can use 32-bits (four bytes) to represent a range of about 4 billion integers (or 2 billion if you include negative integers). With 64-bit words (eight bytes) we can represent `2^64` values, which is quite a large number.  
 
 For the sake of simplicity, we will look at 8-bit words.  
-
-
  
 ---
 
