@@ -128,6 +128,8 @@ Similarly, in the number `187`, the `1` had a value of `100`, because it is in t
 
 What is the pattern here? In each column from right to left we are multiplying the digit in that place by ten to the power of its place from the right (starting at `10^0` with the first digit).  
 
+![Decimal representation of the number 187.](../../assets/diagrams/chapter-03/itcp-diagram-ch03-015-decimal-187.png)
+
 The rightmost digit is multiplied by `10^0`, or `1`. The next digit to the left is multiplied by `10^1`, or `10`. The next digit to the left of that is multiplied by `10^2`, or `100`. We multiply by 10 because we are using base-10, which has a total of ten digits (`0` through `9`).  
 
 So how does this help us understand binary?  
@@ -156,4 +158,4 @@ It is theoretically possible to represent any base number system using these sam
 
 For example, the hexadecimal system (base-16) is used to represent things like memory and colour values with digits ranging from `0`to `9` and then `A` through `F`. The ocstal system (base-8) is used in Linux to represent file permissions with digits ranging from `0` to `7`.  
 
-The next chapter will look at how binary numbers can be used to represent other data, in addition to numbers.  
+The next chapter will look at how binary numbers can be used to represent other data than simple numeric values.  
