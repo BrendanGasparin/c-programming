@@ -22,27 +22,27 @@ Each digit represents an increment in the value of the number. For example, one 
 
 This is called base-1 because there is only one symbol used to represent numbers (i.e. a finger, tally mark, etc.).  
 
-With the unary system, five digits can count five numbers.  
+With the unary system, five symbols can be used to represent the number `5`. Twenty symbols would be needed to represent the number `20`. This is not very efficient.  
 
-What if there was a more efficient way to use these digits. For example, what if we weighted the value of a digit based on its position?  
+What if there was a better way to use symbols to represent numbers? For example, what if we weighted the value of a digit based on its position in a pattern of digits?  
 
 ### The Binary System (Base-2)
 
 Binary (or base-2) is another number system: the number system used by computers. Binary is comprised of bits, which stands for binary digit. "Bi" implies two, and there are only two binary digits: zero and one.
 
-In a computer, these are often represented by electicity, or an absence of electricity (e.g. in an electronic component or connection). So as well as representing zero and one, binary can be used to represent on versus off states, truth versus falsity, or any other binary decision.  
+In a computer, these are often represented by electicity, or an absence of electricity (e.g. in an electronic component or connection). So as well as representing zero and one, binary can be used to represent on versus off, true versus false, and other binary states.  
 
-Multiple binary digits can be used to create a binary word. The length of this word is the number of binary digits it contains. Five binary digits is a 5-bit word.  
+Multiple binary digits can be used to create a binary word. The number of binary digits used to represent a number is called a word. For example, five binary digits is a 5-bit word.  
 
-Binary is a positional number system, which means that the position of a bit in a pattern of bits affects it final value.
+Binary is a **positional** number system, which means that the position of a bit in a pattern of bits affects it final value.  
 
-Let's look at a binary word of 5 bits, similar conceptually to a human hand, and see how many values we can represent with only five binary digits.  
+Let's look at a binary word of 5 bits, similar conceptually to a human hand, and see how many values we can represent with only five binary symbols.  
 
 The number zero can be represented with all zeroes.  
 
 ![Zero represented as a 5-bit binary word](../../assets/diagrams/chapter-03/itcp-diagram-ch03-002-binary.png)
 
-If a bit in a binary number is zero, then its value is zero, regardless of its place. So `00000` has a value of `0`.  
+If a bit in a binary number is zero, then its value is zero, regardless of its place in the overall number. So `00000` has a value of `0`.  
 
 The rightmost digit in a binary number (which we call the first digit) has a **place value** of `1`. If this bit is set to `1`, then we add the place value of the digit to the final value of the binary number. So, in a 5-bit binary word, the number `1` is represented as `00001`.  
 
@@ -126,24 +126,34 @@ You may rmember learning about this in your childhood. In the number `42`, the r
 
 Similarly, in the number `187`, the `1` had a value of `100`, because it is in the third place from the right, the "hundreds" column. `8` is in the "tens" column so it has a value of `8 * 10 = 80`. `7` is in the "ones" column so its value is `7 * 1 = 7`. We get the final value by additing these products together, i.e. `(1 * 100) + (8 * 10) + (7 * 1) = 100 + 80 + 7 = 187`.  
 
-What is the pattern here? In each column from right to left we are multiplying the digit in that place by ten to the power of how many positions it is from the rightmost digit.  
+What is the pattern here? In each column from right to left we are multiplying the digit in that place by ten to the power of its place from the right (starting at `10^0` with the first digit).  
 
 The rightmost digit is multiplied by `10^0`, or `1`. The next digit to the left is multiplied by `10^1`, or `10`. The next digit to the left of that is multiplied by `10^2`, or `100`. We multiply by 10 because we are using base-10, which has a total of ten digits (`0` through `9`).  
+
+So how does this help us understand binary?  
 
 ### How to Calculate a Binary Number
 
 Binary works exactly the same. But because we only have two digits, we multiply the bit in each position by `2` to the power of how many positions it is from the rightmost digit.  
 
-This is why powers of `2` come up so much in computer science: hardware specifications, computer memory, hard disk space. For example, bits are normally managed in groups of eight. Eight bits are a byte.  
+This is one of the reasons why powers of `2` come up so much in computer science: hardware specifications, computer memory, hard disk space, and even programming errors. For example, the game Pac Man had a glitch on level 256 because the designers used a single byte (i.e. an 8-bit number) to store the level number. When it incremented past 255 it cycled back to zero, causing numerous logical errors throughout the game.  
 
-The more bits you have, the greater range of values you can represent. `n` bits can represent `2^n` values. Modern computers can use 32-bits (four bytes) to represent a range of about 4 billion integers (or 2 billion if you include negative integers). With 64-bit words (eight bytes) we can represent `2^64` values, which is quite a large number.  
+The more bits you have, the greater range of values you can represent. `n` bits can represent `2^n` values. Modern computers often use 32-bits (four bytes) to represent a range of about 4 billion integers (or 2 billion if you include negative integers). With 64-bit words (eight bytes) we can represent `2^64` values, which is quite a large number.  
 
 For the sake of simplicity, we will look at 8-bit words.  
- 
----
 
-Note that if we have a value that is too large to be represented by a particular piece of memory, this might cause unexpected behaviour like rolling back to zero or overwriting memory that should not be overwritten.  
+As with decimal numbers, binary is a positional number system. The actual value of a digit is based on its place in the overall number. This is called the place value, or sometimes the **positional value**. The digit's value (i.e. zero or one) is multiplied by its place value to give a final value for that digit, as we have discussed.  
 
-## Data Representation in Computer Science
+The place value of a digit is based on its position from the rightmost digit (starting with zero). In decimal, the place value `10^n`, where n is the place of the digit starting with zero for the rightmost digit. We multiply by `10` because this is the base number system being used, i.e. there are 10 digits in the decimal system.  
 
-If we want to express things with binary numbers then we need standardised methods to do so. This way, a program written on one computer will be compatible when run on similar computers.  
+In binary, the place value is `2` raised to the power of the position. So the place value of the rightmost digit is `2^0`, which is `1`. The second digit's place value is `2^1`, which is `2`. The second digit is multiplied by `2^2`, or `4`. The third digit is multiplied by `2^3`, or `8`, etc.  
+
+Any given bit's place value is therefore `2^(n-1)` where n is the place of the digit, starting with `0` at the rightmost digit.  
+
+In binary, this is nice and simple, because unlike in decimal we don't need to multiply the value of an individual digit by the place value. A one represents the place value, zero represents zero, and the represented place values are added together for the final total.  
+
+It is theoretically possible to represent any base number system using these same mathematics.  
+
+For example, the hexadecimal system (base-16) is used to represent things like memory and colour values with digits ranging from `0`to `9` and then `A` through `F`. The ocstal system (base-8) is used in Linux to represent file permissions with digits ranging from `0` to `7`.  
+
+The next chapter will look at how binary numbers can be used to represent other data, in addition to numbers.  
