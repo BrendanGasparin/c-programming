@@ -138,7 +138,7 @@ So how does this help us understand binary?
 
 Binary works exactly the same. But because we only have two digits, we multiply the bit in each position by `2` to the power of how many positions it is from the rightmost digit.  
 
-This is one of the reasons why powers of `2` come up so much in computer science: hardware specifications, computer memory, hard disk space, and even programming errors. For example, the game Pac Man had a glitch on level 256 because the designers used a single byte (i.e. an 8-bit number) to store the level number. When it incremented past 255 it cycled back to zero, causing numerous logical errors throughout the game.  
+This is one of the reasons why powers of `2` come up so much in computer science: in hardware specifications, computer memory and hard disk space, and even common programming errors. For example, the game Pac Man had a glitch on level 256 because the designers used a single byte (i.e. an 8-bit number) to store the level number. When it incremented past 255 it cycled back to zero, causing numerous logical errors throughout the game.  
 
 The more bits you have, the greater range of values you can represent. `n` bits can represent `2^n` values. Modern computers often use 32-bits (four bytes) to represent a range of about 4 billion integers (or 2 billion if you include negative integers). With 64-bit words (eight bytes) we can represent `2^64` values, which is quite a large number.  
 
@@ -150,12 +150,16 @@ The place value of a digit is based on its position from the rightmost digit (st
 
 In binary, the place value is `2` raised to the power of the position. So the place value of the rightmost digit is `2^0`, which is `1`. The second digit's place value is `2^1`, which is `2`. The second digit is multiplied by `2^2`, or `4`. The third digit is multiplied by `2^3`, or `8`, etc.  
 
+![8-bit binary representation of the number 67.](../../assets/diagrams/chapter-03/itcp-diagram-ch03-016-binary-67.png)
+
 Any given bit's place value is therefore `2^(n-1)` where n is the place of the digit, starting with `0` at the rightmost digit.  
 
-In binary, this is nice and simple, because unlike in decimal we don't need to multiply the value of an individual digit by the place value. A one represents the place value, zero represents zero, and the represented place values are added together for the final total.  
+In binary, this is nice and simple, because unlike in decimal we don't need to multiply the value of an individual digit by the place value. A one represents the place value, zero represents zero, and the represented place values are added together for the final total. All we really have to know is that the place values start with one and double with each position to the left, and that a one means that place value is added to the total.  
 
-It is theoretically possible to represent any base number system using these same mathematics.  
+It is theoretically possible to represent any base number system using the same positional mathematics used in binary and decimal. You just need a set of symbols as large as the number system you are trying to represent.  
 
-For example, the hexadecimal system (base-16) is used to represent things like memory and colour values with digits ranging from `0`to `9` and then `A` through `F`. The ocstal system (base-8) is used in Linux to represent file permissions with digits ranging from `0` to `7`.  
+For example, the hexadecimal system (base-16) is used to refer to memory addresses and colour values. It has sixteen "number" symbols ranging from `0`to `9` and then `A` through `F` representing digits with values from `0` to `15`.  
+
+The ocstal system (base-8) is used in Linux to represent file permissions. It uses digits ranging from `0` to `7`.  
 
 The next chapter will look at how binary numbers can be used to represent other data than simple numeric values, e.g. text, graphics, and audio.  
