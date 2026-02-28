@@ -1,4 +1,4 @@
-# Bits, Bytes, and Binary: Number Systems and Data Representation in Computer Science
+# Bits, Bytes, and Binary: Number Systems in Computer Science
 
 Computers only understand electricty, which can be expressed as zeroes and ones: voltage or no voltage. All data in a computer is represented by zeroes and ones. In this chapter we will learn how zeroes and ones can be used to express human-readable decimal numbers, as well as other things like alphabetical characters, text strings, images, audio, and video.  
 
